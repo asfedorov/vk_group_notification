@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+    html{
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    body{
+        background-color: #42505a;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        /*position: relative;*/
+    }
+    .i-cont div.msg_cont{
+        padding: 20px 20px;
+        /*border-top: 1px solid #42505a;*/
+        border-bottom: 1px solid #42505a;
+        background-color: #fff;
+        position:relative;
+    }
+    .i-cont div.msg_cont:last-child{
+        border-bottom: none;
+    }
+    .sync{
+        padding: 20px 20px;
+        background-color: #42505a;
+        color: #fff;
+        display: none;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 700;
+        /*position: absolute;*/
+        /*bottom:0;*/
+        cursor: pointer;
+        border-bottom: 1px solid black;
+    }
+    .sync img{
+        width: 20px;
+        height: 20px;
+    }
+    .sync:hover{
+        background-color: #32404a;
+    }
+    .i-cont div.unread{
+        width:20px;
+        height:20px;
+        border:1px solid #32404a;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 20px;
+        /*float:right;*/
+        padding:0px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #42505a;
+        color: #fff;
+    }
+    .i-cont div.close{
+        width:20px;
+        height:20px;
+        /*border:1px solid #fff;*/
+        border-radius: 5px;
+        text-align: center;
+        line-height: 20px;
+        font-size:16px;
+        /*float:right;*/
+        padding:0px;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s ease-in 0.1s
+    }
+    .i-cont div.close:hover{
+        background-color: #42505a;
+        color: red;
+        transition: all 0.5s ease-out 0.1s
+
+    }
+    .i-cont div.preview{
+        width: 75%;
+        word-break: break-all;
+        /*float:left;*/
+    }
+    .i-cont div.preview a{
+        color: #42505a;
+    }
+</style>
+</head>
+<body>
+    <div class="i-cont">
+    </div>
+    <div class="sync">
+        Initiate
+    </div>
+</body>

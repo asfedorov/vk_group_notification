@@ -1,0 +1,39 @@
+{
+    "title": "VK Group Notification",
+    "name": "vk-group-notification",
+    "version": "0.0.1",
+    "description": "Getting notification about new messaged and replies in vk groups",
+    "main": "index.js",
+    "author": "Alexander Fedorov",
+    "engines": {
+        "firefox": ">=38.0a1",
+        "fennec": ">=38.0a1"
+    },
+    "license": "MIT",
+    "keywords": [
+        "jetpack"
+    ],
+    "preferences": [
+        {
+            "name": "groupName",
+            "title": "Group name",
+            "description": "Enter id or name of vk group here (the one following '/' when you are on it's page)",
+            "type": "string",
+            "value": ""
+        },
+        {
+            "description": "Period in time between updates",
+            "name": "updateTime",
+            "type": "integer",
+            "value": 5,
+            "title": "Update time"
+        },
+        {
+            "name": "initiated",
+            "title": "Initiated",
+            "description": "Initiation flag",
+            "type": "bool",
+            "value": false
+        }
+    ]
+}
