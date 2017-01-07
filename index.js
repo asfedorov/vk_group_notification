@@ -71,6 +71,15 @@ myPanel.port.on("click-sync", function() {
   }
 });
 
+if (prefs.initiated == true){
+  VKGApp.myInterval = setInterval(function() {
+      // button.badge = button.badge + 1
+      // button.badgeColor = "#AA00AA";
+      checkUnread(0, 100);
+    // }, 1000*30)
+    }, 1000*60*prefs.updateTime)
+}
+
 function initiateFill(offset, count){
   url = "https://api.vk.com/method/wall.get?domain="+prefs.groupName+"&extended=1&count="+count+"&offset="+(offset*100)
   var initialVKRequest = Request({
